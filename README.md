@@ -1,2 +1,2 @@
-# kmtronic-relay-control
-A KMTronic relays control application.
+# Project KMtronic Relay Control Embedded Application
+A KMtronic relays control application.
