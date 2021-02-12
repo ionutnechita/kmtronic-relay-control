@@ -7,18 +7,17 @@ package cmd
 import (
 	"log"
 
-	"../pkg/app"
 	"github.com/spf13/cobra"
 )
 
 func init() {
-	rootCmd.AddCommand(versionCmd)
+	rootCmd.AddCommand(relayStdCfgCmd)
 }
 
-var versionCmd = &cobra.Command{
-	Use:   "version",
-	Short: "KMtronic Relay Control - View application information",
+var relayStdCfgCmd = &cobra.Command{
+	Use:   "using-std-cfg",
+	Short: "KMtronic Relay Control - Standalone with configuration file",
 	Run: func(cmd *cobra.Command, args []string) {
-		log.Println(app.GetVERSIONAPP())
+		log.Println("\n Under development")
 	},
 }

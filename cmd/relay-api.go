@@ -7,18 +7,17 @@ package cmd
 import (
 	"log"
 
-	"../pkg/app"
 	"github.com/spf13/cobra"
 )
 
 func init() {
-	rootCmd.AddCommand(versionCmd)
+	rootCmd.AddCommand(relayAPICmd)
 }
 
-var versionCmd = &cobra.Command{
-	Use:   "version",
-	Short: "KMtronic Relay Control - View application information",
+var relayAPICmd = &cobra.Command{
+	Use:   "using-api",
+	Short: "KMtronic Relay Control - API",
 	Run: func(cmd *cobra.Command, args []string) {
-		log.Println(app.GetVERSIONAPP())
+		log.Println("\n Under development")
 	},
 }
